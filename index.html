@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jennifer Romano • Product Management Leader</title>
+  <meta name="description" content="HCM and payroll SaaS product leader focused on strategy execution, release quality, and measurable customer outcomes." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0c; --panel:#121214; --muted:#1b1b1f; --text:#e7e7ea; --sub:#b5b5bd; --brand:#ffffff; --accent:#d1d1d6; --link:#ffffff;
+      --max:1080px; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6}
+    a{color:var(--link); text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+    header.site{position:sticky; top:0; z-index:10; backdrop-filter:saturate(120%) blur(8px); background:rgba(11,11,12,.6); border-bottom:1px solid #232327}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; height:64px}
+    .brand{font-weight:600}
+    .nav a{font-size:14px; color:#d9d9df}
+    .nav a:hover{color:#fff}
+    .navlinks{display:none; gap:20px}
+    .cta{display:flex; gap:10px}
+    button, .btn{appearance:none; border:1px solid #2a2a30; background:#fff; color:#000; padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer}
+    .btn.secondary{background:transparent; color:#fff}
+    .btn.ghost{background:transparent; border-color:#2a2a30; color:#d9d9df}
+
+    .hero{position:relative; overflow:hidden}
+    .hero .wrap{padding:72px 20px}
+    .glow{position:absolute; inset:-20% -10% auto -10%; height:480px; background:radial-gradient(600px 340px at 50% -10%, rgba(120,119,198,.15), transparent 60%); pointer-events:none}
+    h1{font-size:40px; line-height:1.15; margin:8px 0 0; letter-spacing:-.02em}
+    .lead{margin-top:14px; color:var(--sub); font-size:18px; max-width:720px}
+
+    section{scroll-margin-top:90px; padding:56px 0}
+    h2{font-size:24px; margin:0 0 18px}
+
+    .about{display:grid; gap:24px; grid-template-columns:1.3fr .7fr}
+    .panel{background:var(--panel); border:1px solid #222229; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .panel.pad{padding:20px}
+    .kicker{color:#9a9aa3; font-size:14px; margin-bottom:6px}
+
+    .grid{display:grid; gap:16px}
+    .stats{grid-template-columns:repeat(4,1fr)}
+    .cards{grid-template-columns:repeat(2,1fr)}
+
+    .stat .k{color:#a1a1aa; font-size:12px; text-transform:uppercase; letter-spacing:.08em}
+    .stat .v{margin-top:6px}
+
+    ul.clean{list-style:disc; padding-left:18px; margin:10px 0 0}
+
+    .badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .badge{background:#1c1c21; border:1px solid #2a2a30; color:#d7d7dd; padding:6px 10px; border-radius:999px; font-size:12px}
+
+    .exp .item{padding:16px}
+    .exp .top{display:flex; justify-content:space-between; gap:12px; align-items:baseline}
+    .muted{color:#9a9aa3}
+
+    .two{display:grid; gap:16px; grid-template-columns:1fr 1fr}
+
+    footer{border-top:1px solid #232327; padding:28px 0; color:#9a9aa3; text-align:center}
+
+    /* print styles */
+    @media print{
+      header.site, .cta, .navlinks, .glow{display:none !important}
+      body{background:#fff; color:#000}
+      .panel{box-shadow:none; border:1px solid #ddd}
+      .wrap{max-width:900px}
+      a{color:#000; text-decoration:underline}
+      .badge{border-color:#999; color:#000; background:#f5f5f5}
+      section{padding:18px 0}
+      h1{font-size:28px}
+      h2{font-size:18px}
+    }
+
+    /* responsive */
+    @media (max-width: 960px){
+      .about{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .cards{grid-template-columns:1fr}
+      .two{grid-template-columns:1fr}
+      .navlinks{display:flex}
+      .cta{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="#top">Jennifer Romano</a>
+      <nav class="navlinks">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#case-studies">Case studies</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="cta">
+        <a class="btn" href="#case-studies">View case studies</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="kicker">Atlanta, GA • Remote</p>
+        <h1>Senior Director of Product Management</h1>
+        <p class="lead">HCM and payroll SaaS leader focused on strategy execution, release quality, and customer outcomes.</p>
+        <div style="margin-top:22px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn" href="#case-studies">View case studies</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="#resume" id="resumeBtn">Download resume</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap about">
+        <div class="panel pad">
+          <h2>About</h2>
+          <p>I lead product strategy and delivery for HCM and payroll platforms. My focus is clear goals, reliable releases, and measurable customer outcomes. I am known for steady leadership through complex change and for partnering closely with Engineering, QA, and Customer teams.</p>
+          <p>Recent work includes SOC 2 aligned feature flags, dark releases for tax engine updates, and an automated payroll diff tool that catches regressions before merge. I also run a lightweight discovery cadence that keeps problem statements tight and stakeholder alignment strong.</p>
+        </div>
+        <aside class="panel pad">
+          <p class="kicker">Contact</p>
+          <p><a href="mailto:you@domain.com">you@domain.com</a></p>
+          <div style="display:flex; gap:12px; margin-top:8px">
+            <a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <div class="wrap">
+        <h2>Highlights</h2>
+        <div class="grid stats">
+          <article class="panel pad stat">
+            <div class="k">Leadership</div>
+            <div class="v">Led a 25 plus person org across Product, Design, and QA and built a roadmap that balanced new value with debt.</div>
+          </article>
+          <article class="panel pad stat">
+            <div class="k">Quality</div>
+            <div class="v">Drove payroll accuracy initiatives and pre release automation that reduced post release defects about 35 percent year over year.</div>
+          </article>
+          <article class="panel pad stat">
+            <div class="k">Delivery</div>
+            <div class="v">Improved on time release rate from about 65 percent to about 90 percent across four trains by tightening stage gates.</div>
+          </article>
+          <article class="panel pad stat">
+            <div class="k">Scale</div>
+            <div class="v">Introduced feature flags and dark releases and enabled safe canarying for high risk tax changes.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="case-studies">
+      <div class="wrap">
+        <h2>Case studies</h2>
+        <div class="grid cards">
+          <article class="panel pad">
+            <h3>Payroll Accuracy Guardrails</h3>
+            <p>Prevented costly posting and voiding mistakes by codifying business rules and UX safeguards for quarter crossing scenarios.</p>
+            <ul class="clean">
+              <li>Reduced payroll corrections about 28 percent within two releases</li>
+              <li>Cut support tickets related to void and amend flows</li>
+              <li>Raised processor confidence scores in CSAT</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Payroll</span><span class="badge">Compliance</span><span class="badge">Risk mitigation</span>
+            </div>
+          </article>
+          <article class="panel pad">
+            <h3>Feature Flag and Dark Release Program</h3>
+            <p>Launched an org wide framework with kill switches, auditability, and SOC 2 controls.</p>
+            <ul class="clean">
+              <li>Enabled safe pilots for tax engine refactor</li>
+              <li>Reduced rollback incidents</li>
+              <li>Accelerated learning cycles with canary cohorts</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Platform</span><span class="badge">Change management</span><span class="badge">DevEx</span>
+            </div>
+          </article>
+          <article class="panel pad">
+            <h3>Automated Payroll Diff Testing</h3>
+            <p>Built a utility to compare payroll outputs across branches to catch calculation variances ahead of merge.</p>
+            <ul class="clean">
+              <li>Flagged regressions before QA cycle</li>
+              <li>Shortened triage time</li>
+              <li>Higher release confidence</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Quality</span><span class="badge">Data</span><span class="badge">Automation</span>
+            </div>
+          </article>
+          <article class="panel pad">
+            <h3>Client Council and Escalation Playbook</h3>
+            <p>Created a structured path from escalation to roadmap, tying severity to decision rights and comms templates.</p>
+            <ul class="clean">
+              <li>Improved time to acknowledge and time to mitigate</li>
+              <li>Greater alignment across Sales, CS, and Product</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Customer</span><span class="badge">Process</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <div class="panel">
+          <div class="exp">
+            <div class="item">
+              <div class="top"><strong>Senior Director of Product Management</strong><span class="muted">Apr 2024 to Present</span></div>
+              <div class="muted">PrismHR and PrismHCM</div>
+              <ul class="clean">
+                <li>Own strategy and execution for core HCM and payroll</li>
+                <li>Scaled release rituals and KPIs across on time, escaped defects, and NPS</li>
+                <li>Partnered with Sales and CS on escalation playbooks and client councils</li>
+              </ul>
+            </div>
+            <hr style="border-color:#232327; border-width:1px 0 0" />
+            <div class="item">
+              <div class="top"><strong>Director of Product Management</strong><span class="muted">Jul 2022 to Apr 2024</span></div>
+              <div class="muted">PrismHR and PrismHCM</div>
+              <ul class="clean">
+                <li>Introduced discovery cadence and problem statements focused on outcomes</li>
+                <li>Established definition of ready and done and risk reviews for payroll and tax releases</li>
+              </ul>
+            </div>
+            <hr style="border-color:#232327; border-width:1px 0 0" />
+            <div class="item">
+              <div class="top"><strong>Senior Product Manager, Payroll and HR</strong><span class="muted">Jun 2020 to Jul 2022</span></div>
+              <div class="muted">PrismHR and PrismHCM</div>
+              <ul class="clean">
+                <li>Product owner for payroll and HR experiences used by PEOs and WSEs</li>
+                <li>Delivered improvements to posting, voiding, and tax amendment flows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="badges">
+          <span class="badge">Product strategy</span>
+          <span class="badge">Roadmapping</span>
+          <span class="badge">Metrics and KPIs</span>
+          <span class="badge">Discovery and research</span>
+          <span class="badge">Release management</span>
+          <span class="badge">Change management</span>
+          <span class="badge">Stakeholder alignment</span>
+          <span class="badge">Payroll and tax compliance</span>
+          <span class="badge">Feature flags</span>
+          <span class="badge">B2B SaaS</span>
+          <span class="badge">Team building</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="wrap">
+        <h2>Testimonials</h2>
+        <div class="two">
+          <article class="panel pad">
+            <p style="font-style:italic">“Jennifer brings clarity and momentum to complex, high risk releases. She balances urgency with a steady hand.”</p>
+            <p class="muted">SVP, Engineering</p>
+          </article>
+          <article class="panel pad">
+            <p style="font-style:italic">“Our customers saw the difference within a quarter. Fewer escalations, better delivery, tighter communication.”</p>
+            <p class="muted">VP, Customer Success</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="two">
+          <form class="panel pad" id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" style="width:100%; margin:6px 0 12px; padding:10px 12px; border-radius:10px; border:1px solid #2a2a30; background:#0f0f12; color:#fff" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="Email" style="width:100%; margin:6px 0 12px; padding:10px 12px; border-radius:10px; border:1px solid #2a2a30; background:#0f0f12; color:#fff" />
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" required placeholder="Message" rows="5" style="width:100%; margin:6px 0 16px; padding:10px 12px; border-radius:10px; border:1px solid #2a2a30; background:#0f0f12; color:#fff"></textarea>
+            <button type="submit" class="btn" style="width:100%">Send</button>
+          </form>
+          <aside class="panel pad">
+            <h3>What I am looking for</h3>
+            <p>Senior product leadership roles where user impact, release quality, and cross functional execution matter. I work best in collaborative, customer focused teams.</p>
+            <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn ghost" href="#resume">Resume</a>
+              <a class="btn secondary" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Jennifer Romano. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // simple helpers without dependencies
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mailto handler (replace with your email or a form tool later)
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = (document.getElementById('name')||{}).value || '';
+      const email = (document.getElementById('email')||{}).value || '';
+      const msg = (document.getElementById('msg')||{}).value || '';
+      const body = encodeURIComponent(`From: ${name} <${email}>\n\n${msg}`);
+      window.location.href = `mailto:you@domain.com?subject=Portfolio contact&body=${body}`;
+    });
+
+    // resume placeholder
+    document.getElementById('resumeBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('Replace this with a direct link to your PDF resume.');
+    });
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jennifer Romano",
+    "jobTitle": "Senior Director of Product Management",
+    "address": {"@type":"PostalAddress", "addressLocality":"Atlanta", "addressRegion":"GA", "addressCountry":"US"},
+    "email": "mailto:you@domain.com",
+    "url": "https://example.com",
+    "sameAs": ["https://www.linkedin.com/in/your-profile/"]
+  }
+  </script>
+</body>
+</html>
