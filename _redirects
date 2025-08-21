@@ -1,1 +1,4 @@
-/*  https://jenniferromano.net/:splat  301!
+# If you're using Netlify, these help enforce HTTPS and canonical host.
+http://*  https://:splat  301!
+# Optional: force www (uncomment the next line and set your domain)
+# https://jenniferromano.net/*  https://www.jenniferromano.net/:splat  301!

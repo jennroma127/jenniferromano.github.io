@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jennifer Romano • Product Visionary</title>
+  <meta name="description" content="Jennifer Romano — Product Visionary. Senior Director of Product Management driving SaaS innovation and cross-functional outcomes.">
   <style>
     :root {
       --bg: #000000;
       --text: #ffffff;
       --subtext: #cccccc;
-      --linkedin: #0a66c2; /* LinkedIn brand blue */
-      --highlight: #ffffff; /* emphasized tagline */
+      --linkedin: #0a66c2;
+      --highlight: #ffffff;
     }
-
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
       margin: 0;
-      padding: 0;
       background: var(--bg);
       color: var(--text);
       font-family: "Segoe UI", "Helvetica Neue", "San Francisco", Arial, sans-serif;
@@ -25,76 +26,59 @@
       min-height: 100vh;
       text-align: center;
     }
-
     .card {
-      max-width: 650px; /* slightly wider so title fits */
+      max-width: 650px;
       padding: 2.5rem;
       border-radius: 16px;
-      background: rgba(255, 255, 255, 0.05);
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
       opacity: 0;
       transform: translateY(20px);
-      animation: fadeInUp 1.2s ease forwards;
+      animation: fadeInUp 1.0s ease forwards;
     }
-
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity:0; transform: translateY(20px); }
+      to   { opacity:1; transform: translateY(0); }
     }
-
     h1 {
-      font-size: 2.1rem; /* +1pt bump */
-      margin-bottom: 1rem;
+      font-size: 2.1rem;
+      margin: 0 0 1rem 0;
       font-weight: 700;
-      white-space: nowrap; /* keeps it all on one line */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-
     .tag {
-      font-size: 1.1rem; /* +1pt bump */
+      font-size: 1.1rem;
       color: var(--subtext);
       margin-bottom: 1.5rem;
       line-height: 1.6;
     }
-
-    .links {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-
+    .links { display: flex; justify-content: center; margin-bottom: 1.5rem; }
     .btn {
       text-decoration: none;
       font-weight: 600;
       padding: 0.85rem 1.35rem;
       border-radius: 8px;
-      transition: 0.3s ease;
+      transition: 0.25s ease;
       min-width: 190px;
       text-align: center;
       font-size: 1.05rem;
     }
-
-    .btn.linkedin {
-      background: var(--linkedin);
-      color: #fff;
-    }
-
-    .btn.linkedin:hover {
-      background: #084182;
-    }
-
+    .btn.linkedin { background: var(--linkedin); color: #fff; }
+    .btn.linkedin:hover { filter: brightness(0.9); }
     .soon {
       display: block;
       margin-top: 1.5rem;
-      font-size: 1.2rem; /* +1pt bump */
+      font-size: 1.2rem;
       color: var(--highlight);
       font-weight: bold;
       font-style: italic;
+    }
+    @media (max-width: 420px) {
+      h1 { font-size: 1.65rem; }
+      .tag { font-size: 1rem; }
+      .btn { min-width: 160px; font-size: 1rem; }
     }
   </style>
 </head>
@@ -102,7 +86,7 @@
   <div class="card" role="region" aria-label="Intro">
     <h1>Jennifer Romano — Product Visionary</h1>
     <p class="tag">
-      Senior Director of Product Management <br>
+      Senior Director of Product Management<br>
       Driving SaaS Innovation | Cross-Functional Leader
     </p>
     <div class="links">
