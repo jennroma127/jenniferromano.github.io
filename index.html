@@ -31,7 +31,7 @@
       overflow-x: hidden;
     }
 
-    /* ── Animated background orbs ── */
+    /* ──── Animated background orbs ──── */
     .orb {
       position: fixed;
       border-radius: 50%;
@@ -48,7 +48,7 @@
     @keyframes float2 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-60px,-80px); } }
     @keyframes float3 { 0%,100% { transform: translate(-50%,-50%); } 50% { transform: translate(-30%,-40%); } }
 
-    /* ── Navigation ── */
+    /* ──── Navigation ──── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 1.2rem 2rem;
@@ -72,11 +72,11 @@
     }
     .nav-links a:hover { color: #fff; }
 
-    /* ── Section shared ── */
+    /* ──── Section shared ──── */
     section { position: relative; z-index: 1; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
-    /* ── Hero ── */
+    /* ──── Hero ──── */
     .hero {
       min-height: 100vh;
       display: flex; flex-direction: column;
@@ -190,9 +190,41 @@
       opacity: 0.9;
     }
 
+    /* ──── Scroll indicator ──── */
+    .scroll-indicator {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      animation: fadeIn 1s ease 1s both;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    .scroll-indicator:hover { opacity: 0.7; }
+    .scroll-indicator span {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .scroll-indicator .chevron {
+      width: 24px;
+      height: 24px;
+      border-right: 2px solid var(--muted);
+      border-bottom: 2px solid var(--muted);
+      transform: rotate(45deg);
+      animation: bounce-down 2s ease-in-out infinite;
+    }
+    @keyframes bounce-down {
+      0%, 100% { transform: rotate(45deg) translateY(0); opacity: 1; }
+      50% { transform: rotate(45deg) translateY(6px); opacity: 0.4; }
+    }
+
     @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 
-    /* ── About ── */
+    /* ──── About ──── */
     .about { padding: 6rem 0; }
     .section-label {
       color: var(--accent); font-size: 0.85rem;
@@ -231,7 +263,7 @@
     }
     .stat-label { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
 
-    /* ── Expertise ── */
+    /* ──── Expertise ──── */
     .expertise { padding: 6rem 0; }
     .expertise-grid {
       display: grid;
@@ -251,7 +283,7 @@
     .expertise-card h3 { font-size: 1.15rem; margin-bottom: 0.75rem; }
     .expertise-card p { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
 
-    /* ── Philosophy ── */
+    /* ──── Philosophy ──── */
     .philosophy {
       padding: 6rem 0;
       text-align: center;
@@ -265,7 +297,7 @@
       font-style: italic;
     }
 
-    /* ── Connect ── */
+    /* ──── Connect ──── */
     .connect { padding: 6rem 0; text-align: center; }
     .connect-links {
       display: flex; gap: 1.5rem;
@@ -284,7 +316,7 @@
     .connect-card:hover { transform: translateY(-4px); border-color: rgba(108,99,255,0.3); }
     .connect-card .icon { font-size: 1.5rem; }
 
-    /* ── Footer ── */
+    /* ──── Footer ──── */
     footer {
       text-align: center;
       padding: 3rem 2rem;
@@ -294,14 +326,14 @@
       position: relative; z-index: 1;
     }
 
-    /* ── Scroll reveal ── */
+    /* ──── Scroll reveal ──── */
     .reveal {
       opacity: 0; transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── Responsive ── */
+    /* ──── Responsive ──── */
     @media (max-width: 768px) {
       nav { padding: 1rem; }
       .nav-links { display: none; }
@@ -347,6 +379,10 @@
         Let's Connect
       </a>
     </div>
+    <a class="scroll-indicator" href="#about" aria-label="Scroll to learn more">
+      <span>Explore</span>
+      <div class="chevron"></div>
+    </a>
   </section>
 
   <!-- About -->
